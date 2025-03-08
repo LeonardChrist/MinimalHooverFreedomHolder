@@ -84,8 +84,10 @@ difference()
 
 module screwHole()
 {
+    // screw
     cylinder(d = screwDiameter, h = backwallStrength);
 
+    // screw head
     translate([0, 0, backwallStrength - screwHeadHeight])
         cylinder(d1 = screwDiameter, d2 = screwHeadDiameter, screwHeadHeight);
 }
